@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  scraper:
+    build: .
+    env_file:
+      - .env  
+    volumes:
+      - .:/app 
+    restart: always
