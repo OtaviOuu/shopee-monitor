@@ -65,8 +65,7 @@ class ShopeeScraper:
             return False
         
     async def send_notification(self, book: Book) -> None: 
-        if "estat" in book["name"].lower():
-            return
+
 
         
         bot_token = os.getenv("BOT_TOKEN")
